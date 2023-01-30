@@ -1,0 +1,81 @@
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (main)
+$ git branch second
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (main)
+$ git checkout second
+Switched to branch 'second'
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git status
+On branch second
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Link Q1.txt
+        Q1.txt
+        Sample for branch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git add .
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git status
+On branch second
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Link Q1.txt
+        new file:   Q1.txt
+        new file:   Sample for branch.txt
+
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git commit -m "Answers question 1"
+[second 529199b] Answers question 1
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Link Q1.txt
+ create mode 100644 Q1.txt
+ create mode 100644 Sample for branch.txt
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git status
+On branch second
+nothing to commit, working tree clean
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git log
+commit 529199b0a8f60310ec3ee9f2a06a2f4e075a9ad9 (HEAD -> second)
+Author: DominicDiron <dirondemel99@gmail.com>
+Date:   Sun Jan 29 19:59:54 2023 +0530
+
+    Answers question 1
+
+commit 10fb107e99668701d29c69e7c01951358e344c0a (origin/main, origin/HEAD, main)
+Author: DominicDiron <107987242+DominicDiron@users.noreply.github.com>
+Date:   Sat Jan 21 20:06:20 2023 +0530
+
+    Update README.md
+
+commit 0119c6259d4eb56beaa1cdf75157d7c1abdc0d52
+Author: DominicDiron <107987242+DominicDiron@users.noreply.github.com>
+Date:   Sat Jan 21 20:05:40 2023 +0530
+
+    Initial commit
+
+DOMINIC DIRON@LAPTOP-BSSSQOJA MINGW64 ~/Desktop/Git/Assignment2 (second)
+$ git push
+fatal: The current branch second has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin second
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+
+
+
+
+link: https://github.com/DominicDiron/Assignment2.git
